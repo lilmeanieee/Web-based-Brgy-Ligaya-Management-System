@@ -3,8 +3,8 @@
 1. Click the "Fork" button (top-right corner).
 2. GitHub creates a copy of the repo under your account.
 3. Clone the forked repo to your local machine using:
-   * git clone https://github.com/your-username/Barangay-Management-System.git
-   * (**ex:** git clone https://github.com/lilmeanieee/Barangay-Management-System.git)
+   * git clone https://github.com/your-username/Web-based-Brgy-Ligaya-Management-System.git
+   * (**ex:** git clone https://github.com/lilmeanieee/Web-based-Brgy-Ligaya-Management-System.git)
 4. You can then make changes, commit, and push them to your fork.
 5. To contribute back dito, just create a pull request to the repo.
 
