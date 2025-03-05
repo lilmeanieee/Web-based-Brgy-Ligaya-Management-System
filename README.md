@@ -1,4 +1,4 @@
-# Barangay-Management-System Guide(?)
+# Web-based-Brgy-Ligaya-Management-System Guide(?)
 ### How to contribute?
 1. Click the "Fork" button (top-right corner).
 2. GitHub creates a copy of the repo under your account.
