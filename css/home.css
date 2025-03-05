@@ -1,0 +1,91 @@
+.navbar{
+    background-color: #404258;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 10px 15px;
+    
+}
+
+.navbar-brand{
+    color: #ffd803;
+    font-size: 24px;
+    font-weight: 500;
+    transition: 0.3s color;
+}
+
+.login-button{
+    color: #272343;
+    background-color: #ffd803;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 20px;
+    text-decoration: none;
+    transition:  0.3s background-color;
+}
+.login-button:hover{
+    background-color: #404258;
+    color: beige;
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+.nav-link{
+    color: #404258;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link:hover, .nav-link.active{
+    color: #404258;;
+}
+@media (min-width: 768px){
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 2px;
+        background-color: #ffd803;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.active::before{
+        Width:100%;
+        Visibility:visible;
+    }
+}
+
+.hero-section{
+    background: url(../asset/img/hero-bg.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.about-section{
+    background-color: #fffffe;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+} 
+.service-section{
+    background-color: #e3f6f5;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
