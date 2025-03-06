@@ -11,3 +11,7 @@
 ## Manage your Fork Repository
 As you can see sa image below, may **Sync fork button**. Sync nyo lang yung forked repo nyo para updated yung project files nyo since di kasi sya naga auto update.
 ![image](https://github.com/user-attachments/assets/761033f0-73f5-4863-bccf-9aeda44d77f4)
+
+## How to update your repository 
+1. Open your visual studio terminal and type "**git pull origin main**"
+
