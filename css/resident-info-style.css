@@ -1,52 +1,25 @@
-.sidebar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 250px;
-    padding-top: 20px;
-    background: #023047;
-    z-index: 100;
-    transition: width 0.3s;
-}
-.sidebar .nav-link{
-    color: #fff;
-    display: flex;
-    padding: 9px 22px;
-    gap: 20px;
-    text-decoration: none;
-    font-weight: 500;
-}
-.sidebar .description{
-    font-size: 14px;
-}
-.sidebar .nav-link:hover{
-    color: #023047;
-    background-color: #8ecae6;
-}
-.sidebar .submenu{
-    background-color: #00596f;
-    padding-left: 3%;
-}
-.main-content{
-    height: 100%;
-    margin-left: 250px;
-    padding: 20px;
+.content-header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
-@media  (max-width: 576px){
-    .sidebar {
-        width: 60px;
-    }
-    .sidebar .description{
-        display: none;
-    }
-    .sidebar .nav-link{
-        justify-content: center;
-    }
+.main-content {
+    padding: 0;
+}
 
-    .main-content{
-        margin-left: 60px;
-    }
-    
+.row {
+    flex-wrap: nowrap; /* Prevents the sidebar and content from stacking */
+}
+
+.col-auto {
+    min-width: 250px; /* Set a minimum width for the sidebar */
+}
+
+.col {
+    flex-grow: 1; /* Ensures the main content fills remaining space */
+}
+
+.table-responsive {
+    overflow-x: auto;
 }
