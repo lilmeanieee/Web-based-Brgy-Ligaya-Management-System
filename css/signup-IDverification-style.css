@@ -37,14 +37,18 @@ form{
     margin-bottom: -0.5rem;
     color: #fff;
 }
-a{
-    color: #2ECC71;
-    text-decoration: none;
-}
 h2{
     color: #fff;
 }
 .form-floating input:focus::placeholder {
     color: #aaa; 
     opacity: 1;
+}
+p{
+    color: #fff;
+    text-align: center;
+}
+label{
+    color: #fff;
+    font-weight: 600;
 }

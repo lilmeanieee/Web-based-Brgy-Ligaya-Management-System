@@ -1,5 +1,5 @@
 form{
-    max-width: 400px;
+    max-width: 500px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -8,20 +8,18 @@ form{
     padding: 20px;
 }
 .bg{
-    background-color: #272343;
+    background-color: #023047;
     border-radius: 15px;
     box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.1);
 } 
 
-.btn {
+.btn{
+    color: #fff;
+    background-color: #2ECC71;
     display: block;
     margin: auto;
     width: 120px;
     margin-top: 10px;
-} 
-.btn-register{
-    color: #fff;
-    background-color: #2ECC71;
 }
 .forgot-pass{
     text-align: right;
@@ -45,5 +43,9 @@ a{
 }
 h2{
     color: #fff;
+}
+.form-floating input:focus::placeholder {
+    color: #aaa; 
+    opacity: 1;
 }
 
