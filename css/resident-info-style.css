@@ -1,9 +1,15 @@
+.sidebar{
+    width: 300px;
+}
 .content-header {
     padding: 0;
     margin: 0;
+    
     width: 100%;
 }
-
+.add-search{
+    margin-bottom: 30px;
+}
 .main-content {
     padding: 0;
 }
@@ -22,4 +28,7 @@
 
 .table-responsive {
     overflow-x: auto;
+}
+.collapse{
+    background: #000;
 }
