@@ -36,13 +36,13 @@
                     </li>
                     <!-- Manage Residents -->
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link  text-white dropdown-toggle" data-bs-toggle="collapse"
+                        <a href="#" class="nav-link active text-white dropdown-toggle" data-bs-toggle="collapse"
                             data-bs-target="#residentsDropdown">
                             <i class="bi bi-people me-2"></i>
                             <span class="d-none d-sm-inline">Manage Residents</span>
                         </a>
                         <ul class="collapse list-unstyled ps-4" id="residentsDropdown">
-                            <li><a href="#" class="nav-link text-white">View Residents</a></li>
+                            <li><a href="resident-info.html" class="nav-link text-white">View Residents</a></li>
                             <li><a href="#" class="nav-link text-white">Add Resident</a></li>
                         </ul>
                     </li>
@@ -54,21 +54,22 @@
                             <span class="d-none d-sm-inline">Brangay Services</span>
                         </a>
                         <ul class="collapse active-submenu list-unstyled ps-4" id="servicesDropdown">
-                            <li><a href="#" class="nav-link text-white">Document Request</a></li>
+                            <li><a href="document-request-list.html" class="nav-link text-white">Document Request</a></li>
 
                         </ul>
                     </li>
 
                     <!-- Announcement -->
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link active text-white dropdown-toggle" data-bs-toggle="collapse"
+                        <a href="#" class="nav-link text-white dropdown-toggle" data-bs-toggle="collapse"
                             data-bs-target="#announcementDropdown">
                             <i class="bi bi-people me-2"></i>
                             <span class="d-none d-sm-inline">Announcements</span>
                         </a>
                         <ul class="collapse list-unstyled ps-4" id="announcementDropdown">
-                            <li><a href="#" class="nav-link text-white">Post New Announcement</a></li>
-                            <li><a href="#" class="nav-link text-white">News and Updates</a></li>
+                            <li><a href="post-announcement.html" class="nav-link text-white">Post New Announcement</a></li>
+                            <li><a href="news-and-updates.html" class="nav-link text-white">News and Updates</a></li>
+                            <li><a href="upcoming-events.html" class="nav-link text-white">Upcoming Events</a></li>
                         </ul>
                     </li>
 
@@ -100,13 +101,14 @@
             <!-- Main Content -->
             <div class="main-content col min-vh-100">
                 <div class="container content-header">
-                    <!-- Header -->
-                     
+                    <!-- Content Header Title -->
                     <div class="d-flex justify-content-between align-items-center bg-dark text-white p-3">
                         <h4 class="mb-0">Resident Information</h4>
                     </div>
-
-                    
+                    <!-- End Content Header Title -->
+                </div>
+                <!--  Content -->
+                <div class="container mt-4">
                     <div class="add-search d-flex justify-content-between align-items-center px-4 mt-3">
                         <!-- Add Resident Button -->
                         <a href="../../html/admin/add-resident.html" class="btn btn-primary">
@@ -290,7 +292,7 @@
             </div>
         </div>
     </div>
-    </div>
+  
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

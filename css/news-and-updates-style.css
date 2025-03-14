@@ -1,3 +1,5 @@
+/* Admin UI CSS */
+
 /* sidebar */
 .sidebar{
     width: 300px;
@@ -33,6 +35,11 @@
 }
 .main-content {
     padding: 0;
+}
+
+.list-group-item:hover{
+    background-color: #e5f1f7;
+   
 }
 
 /* end content */
