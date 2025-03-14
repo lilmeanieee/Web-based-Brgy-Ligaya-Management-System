@@ -15,57 +15,53 @@
 
 <body>
     <div class="container-sm">
-        <form action="#" class="form-group">
+        <form action="../handlers_php/sign-up.php" method="POST" class="form-group">
             <div class=" bg p-4">
-                <button type="button" class="btn-close btn-close-white" aria-label="Close"
-                    onclick="history.back();"></button>
-
+                <button type="button" class="btn-close btn-close-white" aria-label="Close" onclick="history.back();"></button>
+        
                 <h2 class="text-center mb-3">Create Account</h2>
                 <div class="row">
                     <div class="col-sm-6 mb-3">
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="floatingFName" placeholder=" " required>
-                            <label for="floatingFName">First Name</label>
+                            <input type="text" class="form-control" name="first_name" placeholder=" " required>
+                            <label>First Name</label>
                         </div>
                     </div>
                     <div class="col-sm-6 mb-3">
                         <div class="form-floating">
-                            <input type="text" class="form-control" id="floatingLName" placeholder=" " required>
-                            <label for="floatingLName">Last Name</label>
+                            <input type="text" class="form-control" name="last_name" placeholder=" " required>
+                            <label>Last Name</label>
                         </div>
                     </div>
                 </div>
-
+        
                 <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="01234567890"
-                        required>
-                    <label for="floatingPassword">Contact Number</label>
+                    <input type="text" class="form-control" name="contact_number" placeholder="01234567890" required>
+                    <label>Contact Number</label>
                 </div>
                 <div class="form-floating mb-3 ">
-                    <input type="email" class="form-control" id="floatingEmail" placeholder="name@ligaya.gensan.com"
-                        required>
-                    <label for="floatingEmail">Email</label>
+                    <input type="email" class="form-control" name="email" placeholder="name@ligaya.gensan.com" required>
+                    <label>Email</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
-                    <label for="floatingPassword">Password</label>
+                    <input type="password" class="form-control" name="password" placeholder="Password" required>
+                    <label>Password</label>
                 </div>
                 <div class="form-floating mb-3">
-                    <input type="password" class="form-control" id="floatingConfirmPassword"
-                        placeholder="Confirm Password" required>
-                    <label for="floatingConfirmPassword">Confirm Password</label>
+                    <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required>
+                    <label>Confirm Password</label>
                 </div>
-
-                <button class="btn btn-register" type="submit" onclick="window.location.href='../html/signup-IDverification.html';">
-                    Register
-                </button>
-                    
+        
+                <button class="btn btn-register" type="submit">Register</button>
                 <div class="register-link">
                     <p>Already have an account?</p>
                     <a href="../html/login.html">Log in</a>
                 </div>
             </div>
         </form>
+        
+</form>
+
     </div>
 
     <!-- Bootstrap Bundle with Popper -->

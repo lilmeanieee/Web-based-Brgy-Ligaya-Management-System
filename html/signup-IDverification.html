@@ -13,28 +13,26 @@
 
 <body>
     <div class="container">
-        <form action="#" class="form-group">
+        <<form action="../handlers_php/verify-id.php" method="POST" enctype="multipart/form-data" class="form-group">
             <div class="bg p-4">
-                <button type="button" class="btn-close btn-close-white" aria-label="Close"
-                    onclick="history.back();"></button>
-
+                <button type="button" class="btn-close btn-close-white" aria-label="Close" onclick="history.back();"></button>
+        
                 <h2 class="text-center">Identity Verification</h2>
                 <p class="text-center mb-4">Upload the following files to verify your identity</p>
-   
-                <label for="inputFileID" class="form-label">Upload Valid ID</label>
+        
+                <label class="form-label">Upload Valid ID</label>
                 <div class="input-group mb-3">
-                    <input type="file" class="form-control" id="inputFileID" 
-                        aria-describedby="inputFileID" aria-label="Upload" required>
+                    <input type="file" class="form-control" name="valid_id" required>
                 </div>
-                <label for="inputFileSelfie" class="form-label">Upload a Selfie holding Valid ID</label>
+        
+                <label class="form-label">Upload a Selfie holding Valid ID</label>
                 <div class="input-group mb-3">
-                    <input type="file" class="form-control" id="inputFileSelfie" aria-describedby="inputFileSelfie" aria-label="Upload" required>
+                    <input type="file" class="form-control" name="selfie_id" required>
                 </div>
-                
-                <button class="btn btn-login" type="submit" onclick="">Submit</button>
-                
+        
+                <button class="btn btn-login" type="submit">Submit</button>
             </div>
-        </form>
+        </form>        
     </div>
 
 
