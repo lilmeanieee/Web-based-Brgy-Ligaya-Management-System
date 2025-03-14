@@ -28,10 +28,7 @@
     background-color: #00596f;
     padding-left: 3%;
 }
-.main-content{
-    height: 100%;
-    margin-left: 250px;
-}
+
 
 @media  (max-width: 576px){
     .sidebar {
@@ -48,4 +45,9 @@
         margin-left: 60px;
     }
     
+}
+
+.main-content{
+    height: 100%;
+    margin-left: 250px;
 }

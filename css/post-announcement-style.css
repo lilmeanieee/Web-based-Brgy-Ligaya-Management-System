@@ -4,16 +4,17 @@
 }
 
 .row {
-    flex-wrap: nowrap; /* Prevents the sidebar and content from stacking */
+    flex-wrap: nowrap; 
 }
 
 .col-auto {
-    min-width: 250px; /* Set a minimum width for the sidebar */
+    min-width: 250px; /* minimum width for the sidebar */
 }
 
 .col {
-    flex-grow: 1; /* Ensures the main content fills remaining space */
+    flex-grow: 1; 
 }
+
 
 .collapse{
     background: #023047;
@@ -28,18 +29,13 @@
 .content-header {
     padding: 0;
     margin: 0;
+    
     width: 100%;
 }
 .main-content {
     padding: 0;
 }
-.add-search{
-    margin-bottom: 30px;
-}
 
-.table-responsive {
-    overflow-x: auto;
-}
 /* end content */
 
 
