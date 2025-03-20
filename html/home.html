@@ -16,7 +16,12 @@
     <!--navbar -->
     <nav class="navbar navbar-header navbar-expand-lg bg-light fixed-top">
         <div class="container-fluid">
-            <a class="me-auto navbar-brand " href="../html/home.html">Logo</a>
+            <div class="navbar-logo ">
+                <img src="../asset/img/brgy_official_seal.png" alt="Barangay Ligaya official seal">
+                <a class="me-auto navbar-brand " href="../html/home.html">Brgy Ligaya</a>
+            </div>
+
+            <!-- Offcanvas Menu -->
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
@@ -26,13 +31,20 @@
 
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <!-- nav home -->
                         <li class="nav-item">
                             <a class="mx-md-2 nav-link active" aria-current="page" href="../html/home.html">Home</a>
                         </li>
+                        <!-- nav about -->
                         <li class="nav-item">
                             <a class="mx-md-2 nav-link" href="../html/about.html">About</a>
                         </li>
+                        <!-- nav services -->
+                        <li class="nav-item">
+                            <a class="mx-md-2 nav-link" href="#service">Service</a>
+                        </li>
 
+                        <!-- nav services 
                         <li class="nav-item dropdown">
                             <a class="mx-md-2 nav-link dropdown-toggle" href="../html/service.html" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -47,6 +59,9 @@
                                 <li><a class="dropdown-item" href="#">Submit Complaints</a></li>
                             </ul>
                         </li>
+                        -->
+
+                        <!-- nav announcement -->
                         <li class="nav-item dropdown">
                             <a class="mx-md-2 nav-link dropdown-toggle" href="announcement-section" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
@@ -62,6 +77,7 @@
                                 </li>
                                 <li><a class="dropdown-item" href="#">Others</a></li>
                             </ul>
+                            <!-- nav community -->
                         <li class="nav-item dropdown">
                             <a class="mx-md-2 nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -76,6 +92,7 @@
                                 <li><a class="dropdown-item" href="leaderboard.html">Leaderboard</a></li>
                             </ul>
                         </li>
+                        <!-- nav more 
                         <li class="nav-item dropdown">
                             <a class="mx-md-2 nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -91,15 +108,19 @@
                                 <li><a class="dropdown-item" href="#">Separated link</a></li>
                             </ul>
                         </li>
+                        -->
                     </ul>
                 </div>
             </div>
-            <a href="../html/login.html" class="btn login-button">Login</a>
+            <!-- Login & Menu Button Group -->
+            <div class="d-flex align-items-center">
+                <a href="../html/login.html" class="btn login-button">Login</a>
 
-            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" title="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" title="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
         </div>
     </nav>
     <!--navbar end-->
@@ -109,8 +130,8 @@
         <div class="container d-flex align-items-center justify-content-center fs-1
         text-white flex-column text-center">
             <h1>Connecting People, Building Community</h1>
-            <h2>We are dedicated to making local services more accessible and efficient. 
-                Whether you need official documents, healthcare assistance, 
+            <h2>We are dedicated to making local services more accessible and efficient.
+                Whether you need official documents, healthcare assistance,
                 or community programs, we are here to serve you.</h2>
             <a href="#service" class="btn view-service-button">View Services</a>
 
@@ -120,78 +141,148 @@
 
     <!--about section-->
     <section class="about-section" id="about">
+        <div class="row">
+            <div class="col-12 text-center mb-10">
+                <h2 class="section-title">About Us</h2>
+                <div class="section-divider"></div>
+                <div class="about-content">
+                    <div class="about-description mx-2">
+                        <p>Welcome to our barangay, a thriving community dedicated to serving our residents with
+                            integrity
+                            and
+                            commitment. We strive to create a safe, inclusive, and progressive environment by providing
+                            essential public services, fostering local development, and ensuring the well-being of every
+                            citizen.</p>
+                        <p>From public assistance programs to community-driven initiatives, we are here to support and
+                            uplift
+                            our people. Together, we build a stronger, more connected barangay.</p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="container text-center">
+                <div class="row align-items-start">
+                    <div class="col col-md-6">
+                        <h3>Our Mission</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum leo in lacinia accumsan.
+                            Maecenas
+                            id erat id ligula consectetur consectetur. Cras tempus lacus mi, vel aliquet ex rhoncus nec.
+                            Fusce
+                            cursus, purus et porttitor mattis, sapien justo elementum diam, quis tempus dolor lectus
+                            vitae elit.
+                            Ut tellus ante, congue nec tincidunt eget, bibendum ac arcu.</p>
+
+                    </div>
+                    <div class="col col-md-6">
+                        <h3>Our Vision</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum leo in lacinia accumsan.
+                            Maecenas
+                            id erat id ligula consectetur consectetur. Cras tempus lacus mi, vel aliquet ex rhoncus nec.
+                            Fusce
+                            cursus, purus et porttitor mattis, sapien justo elementum diam, quis tempus dolor lectus
+                            vitae elit.
+                            Ut tellus ante, congue nec tincidunt eget, bibendum ac arcu.</p>
+
+                    </div>
+                </div>
+                <a href="#services" class="btn-learn-more">Learn More</a>
+            </div>
+        </div>
     </section>
     <!--about section end-->
 
     <!--service section-->
     <section class="service-section" id="service">
-        <h2 class="text-center pt-4">Barangay Offered Services</h2>
-    
-        <div class="custom-card-row row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-3">
-            <div class="col custom-card-col">
-                <div class="card h-100 custom-card">
-                    <img src="../asset/img/sample.png" class="custom-card-img card-img-top img-fluid rounded-start" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Barangay Clearance & Certifications </h5>
-                        <p class="card-text">Provides official clearance and certifications required for employment, business permits, and legal documentation</p>
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="section-title">Barangay Offered Services</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="custom-card-row row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 g-3">
+                <div class="col custom-card-col">
+                    <div class="card h-100 custom-card">
+                        <img src="../asset/img/docu_req_icon.png"
+                            class="custom-card-img card-img-top img-fluid rounded-start" alt="Document Request Icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Document Requests </h5>
+                            <p class="card-text">Request for barangay documents such as clearance, permits,
+                                certifications,
+                                and cedula.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col custom-card-col">
-                <div class="card h-100 custom-card">
-                    <img src="../asset/img/sample.png" class="custom-card-img card-img-top img-fluid rounded-start" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Cedula (Community Tax Certificate) </h5>
-                        <p class="card-text">Assists in issuing cedulas, which are required for legal, financial, and government-related transactions.</p>
+                <div class="col custom-card-col">
+                    <div class="card h-100 custom-card">
+                        <img src="../asset/img/announcement_icon.png"
+                            class="custom-card-img card-img-top img-fluid rounded-start"
+                            alt="Megaphone Public Announcement Icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Public Announcements</h5>
+                            <p class="card-text">Disseminating important important updates, events, and public notices–
+                                such
+                                as, job fairs, barangay activities,
+                                and warning during calamities.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-    
-            <div class="col custom-card-col">
-                <div class="card h-100 custom-card">
-                    <img src="../asset/img/sample.png" class="custom-card-img card-img-top img-fluid rounded-start" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Medical Consultation </h5>
-                        <p class="card-text">Offers scheduled free basic medical check-ups, and consultations for residents.</p>
+
+                <div class="col custom-card-col">
+                    <div class="card h-100 custom-card">
+                        <img src="../asset/img/med_checkup_icon.png"
+                            class="custom-card-img card-img-top img-fluid rounded-start" alt="Medical Check-up Icon">
+                        <div class="card-body">
+                            <h5 class="card-title">Medical Consultation </h5>
+                            <p class="card-text">Offers scheduled free basic medical check-ups, and consultations for
+                                residents.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col custom-card-col">
-                <div class="card h-100 custom-card">
-                    <img src="../asset/img/sample.png" class="custom-card-img card-img-top img-fluid rounded-start" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Garbage Collection </h5>
-                        <p class="card-text">Ensures a systematic waste collection schedule.</p>
+                <div class="col custom-card-col">
+                    <div class="card h-100 custom-card">
+                        <img src="../asset/img/garbage_truck_icon.png"
+                            class="custom-card-img card-img-top img-fluid rounded-start" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Garbage Collection </h5>
+                            <p class="card-text">Ensures a systematic waste collection schedule.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col custom-card-col">
-                <div class="card h-100 custom-card">
-                    <img src="../asset/img/sample.png" class="custom-card-img card-img-top img-fluid rounded-start" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Sports & Recreation Programs</h5>
-                        <p class="card-text">Basketball leagues, talent contests, and youth development activities.</p>
+                <div class="col custom-card-col">
+                    <div class="card h-100 custom-card">
+                        <img src="../asset/img/sports_activity_icon.png"
+                            class="custom-card-img card-img-top img-fluid rounded-start" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sports & Recreation Programs</h5>
+                            <p class="card-text">Basketball leagues, talent contests, and youth development activities.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col custom-card-col">
-                <div class="card h-100 custom-card">
-                    <img src="../asset/img/sample.png" class="custom-card-img card-img-top img-fluid rounded-start" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Free Document Printing</h5>
-                        <p class="card-text">Offers free printing services to assist residents who need essential documents printed</p>
+                <div class="col custom-card-col">
+                    <div class="card h-100 custom-card">
+                        <img src="../asset/img/printing_service_icon.png"
+                            class="custom-card-img card-img-top img-fluid rounded-start" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Free Document Printing</h5>
+                            <p class="card-text">Offers free printing services to assist residents who need essential
+                                documents printed</p>
+                        </div>
                     </div>
                 </div>
+
             </div>
-    
         </div>
     </section>
-    
+
     <!--service section end-->
 
     <!--anouncement section-->
     <section class="announcement-section" id="anouncement">
+        <div class="col-12 text-center mb-4">
+            <h2 class="section-title">Announcements</h2>
+            <div class="section-divider"></div>
+        </div>
 
     </section>
     <!--service section end-->
