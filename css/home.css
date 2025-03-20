@@ -71,6 +71,7 @@
         Width:100%;
         Visibility:visible;
     }
+    
 }
 /* navbar end */
 
@@ -137,14 +138,16 @@
     align-items: flex-start;
     background-color: #e3f6f5;
     padding: 20px;
-    min-height: 100vh;
+    min-height: auto;
 }
 
 .service-section .custom-card-row {
-   margin: 30px ;
+   margin: 30px 40px;
+    
 }
 .service-section .custom-card-col {
     display: flex;
+    
 }
 .service-section .custom-card {
     max-width: 250px;  
