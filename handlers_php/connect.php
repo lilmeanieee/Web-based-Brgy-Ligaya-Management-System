@@ -1,3 +1,4 @@
+
     <?php
     $host = "localhost";
     $user = "root";
@@ -14,3 +15,4 @@
         echo "Database connected successfully!";
     }
     ?>
+
