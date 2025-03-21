@@ -4,11 +4,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let formData = new FormData(this);
 
-        fetch("post-announcement.php", {
+        fetch("http://localhost/Web-based-Brgy-Ligaya-Management-System-1/handlers_php/submit_announcement.php", {
             method: "POST",
             body: formData
         })
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.json();
+        })
         .then(data => {
             let toastMessage = document.getElementById("toastMessage");
             let toastText = document.getElementById("toastText");
@@ -17,23 +22,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 toastMessage.classList.remove("bg-danger");
                 toastMessage.classList.add("bg-success");
                 toastText.textContent = "Announcement posted successfully!";
+                document.getElementById("announcementForm").reset();
             } else {
                 toastMessage.classList.remove("bg-success");
                 toastMessage.classList.add("bg-danger");
                 toastText.textContent = "Posting Announcement Error. Please check your input data and try again.";
             }
 
-            // Show the toast message
             let toast = new bootstrap.Toast(toastMessage);
             toast.show();
-
-            // Reset form on success
-            if (data.success) {
-                document.getElementById("announcementForm").reset();
-            }
         })
         .catch(error => {
-            console.error("Error:", error);
+            console.error("Fetch Error:", error);
             
             let toastMessage = document.getElementById("toastMessage");
             let toastText = document.getElementById("toastText");
