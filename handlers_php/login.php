@@ -1,13 +1,17 @@
 <?php
 session_start();
-require 'connect.php'; // Database connection file
-
-// Debugging code removed to ensure script execution continues
-
+include 'connect.php'; // Database connection file
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = trim($_POST["email"]);
     $password = trim($_POST["password"]);
+
+    // Validate Email
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $_SESSION['error'] = "Invalid email format.";
+        header("Location: ../html/login.html");
+        exit();
+    }
 
     // Check if fields are empty
     if (empty($email) || empty($password)) {
@@ -17,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Prepare SQL query
-    $stmt = $conn->prepare("SELECT user_id, password, role FROM users WHERE email = ? AND status = 'Active'");
+    $stmt = $conn->prepare("SELECT user_id, password, role FROM tbl_users WHERE email = ? AND status = 'Active'");
     $stmt->bind_param("s", $email);
     $stmt->execute();
     $stmt->store_result();
@@ -34,9 +38,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             // Redirect based on role
             if ($role == "Admin" || $role == "Sub-Admin") {
-                header("Location: ../html/admin/announcements/news-and-updates.html");
+                header("http://localhost/Brgy-Ligaya-Management-Systemased-/html/admin/manage_residents/resident-info.html#");
             } else {
-                header("Location: ../html/home.php");
+                header("http://localhost/Brgy-Ligaya-Management-Systemased-/html/admin/manage_residents/resident-info.html#");
             }
             exit();
         } else {
@@ -50,3 +54,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header("Location: ../html/login.html");
     exit();
 }
+?>
