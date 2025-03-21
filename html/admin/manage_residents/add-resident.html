@@ -9,37 +9,43 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <link rel="stylesheet" href="../../css/add-resident-style.css">
+    
+    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
+    <script src="../../js/add-residents.js"></script>
     <div class="modal">
         <div class="modal-content">
             <h2>Create Resident Data</h2>
 
             <div class = "data container">
-                <form>
+                <form id="residentForm">
                     
                     <fieldset>
                         <legend>Personal Information</legend>
                         <div class = "personalInfo-container"></div>
                             <div class = "personalInfo-data">
-                                <label>Last Name: <input type="text"></label>
-                                <label>First Name: <input type="text"></label>
-                                <label>Middle Name: <input type="text"></label>
-                                <label>Suffix: <input type="text"></label>
+                                <label>Last Name: <input type="text"  id="last_name" required></label>
+                                <label>First Name: <input type="text"  id="first_name" required ></label>
+                                <label>Middle Name: <input type="text"  id="middle_name"></label>
+                                <label>Suffix: <input type="text" id="suffix"></label>
                         
-                                <label>Birthdate: <input type="date"></label>
-                                <label>Age: <input type="number"></label>
-                                <label>Place of Birth: <input type="text"></label>
+                                <label>Birthdate: <input type="date" id="birthdate" required></label>
+                                <label>Age: <input type="number" id="age" required></label>
+                                <label>Place of Birth: <input type="text" id="place_of_birth"required ></label>
                                 <label>Gender: 
-                                <select>
+                                <select id="gender" required>
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
                                     <option value="preferNotToSay">Prefer not to say</option>
                                 </select>
                                 </label>
                                 <label>Civil Status: 
-                                    <select>
+                                    <select id="civil_status" required >
                                         <option value="single">Single</option>
                                         <option value="married">Married</option>
                                         <option value="widowed">Widowed</option>
@@ -48,8 +54,8 @@
                                     </select>
                                 </label>
                                 
-                                <label>Nationality: <input type="text"></label>
-                                <label>Religion: <input type="text"></label>
+                                <label>Nationality: <input type="text" id="nationality" required></label>
+                                <label>Religion: <input type="text" id="religion" required></label>
                             </div>
                         </div> 
                     </fieldset>
@@ -59,14 +65,14 @@
                         <legend>Address Information</legend>
                         <div class = "addressInfo-container">
                             <div class="addressInfo-data">
-                                <label>House/Lot Number: <input type="text"></label>
-                                <label>Purok: <input type="text"></label>
-                                <label>Street: <input type="text"></label>
-                                <label>Subdivision: <input type="text"></label>
-                                <label>Barangay: <input type="text"></label>
-                                <label>City/Municipality: <input type="text"></label>
-                                <label>Province: <input type="text"></label>
-                                <label>Region: <input type="text"></label>
+                                <label>House/Lot Number: <input type="text" id="house_lot_no" ></label>
+                                <label>Purok: <input type="text" id="purok" required></label>
+                                <label>Street: <input type="text" id="street"required ></label>
+                                <label>Subdivision: <input type="text" id="subdivision"></label>
+                                <label>Barangay: <input type="text" id="barangay" required></label>
+                                <label>City/Municipality: <input type="text" id="city_municipality"required ></label>
+                                <label>Province: <input type="text" id="province" required></label>
+                                <label>Region: <input type="text" id="region" required></label>
                             </div>
                         </div>
                     </fieldset>
@@ -75,8 +81,8 @@
                         <legend>Contact Information</legend>
                         <div class = "contactInfo-container">
                             <div class="contactInfo-data">
-                                <label>Mobile No.: <input type="text"></label>
-                                <label>Email Address: <input type="email"></label>
+                                <label>Mobile No.: <input type="text" id="mobile_no" required></label>
+                                <label>Email Address: <input type="email" id="email_address" required></label>
                             </div>
                         </div>
                     </fieldset>
@@ -85,10 +91,10 @@
                         <legend>Emergency Contact</legend>
                         <div class = "emergencyInfo-container">
                             <div class="emergencyInfo-data">
-                                <label>Name: <input type="text"></label>
-                                <label>Contact Number: <input type="text"></label>
+                                <label>Name: <input type="text" id="emergency_name" ></label>
+                                <label>Contact Number: <input type="text" id="emergency_contact_num" ></label>
                                 <label>Relationship: 
-                                    <select>
+                                    <select id="emergency_relationship">
                                         <option value="parent">Parent</option>
                                         <option value="spouse">Spouse</option>
                                         <option value="sibling">Sibling</option>
@@ -101,15 +107,22 @@
                     </fieldset>
     
                     <div class="form-buttons">
-                        <button type="submit">Submit</button>
+                        <button type="submit" id="btn_submit">Submit</button>
                         <button type="button" class="close-btn" onclick="history.back();">Cancel</button>
                     </div>
+
+                    <!-- Toast Message -->
+                    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                        <div id="toastMessage" class="toast hide bg-success text-white" role="alert" aria-live="assertive" aria-atomic="true">
+                            <div class="toast-body" id="toastText"></div>
+                        </div>
+                    </div>
+                    
                 </form>
             </div>
             
         </div>
     </div>
-
 
 
 
